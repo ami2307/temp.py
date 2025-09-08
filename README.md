@@ -1,7 +1,7 @@
 # temp.py
 Converting temperature in Fahrenheit from Celsius 
 
-temp_fahrenheit = float(input("Enter temperature in Fahrenheit:-")) 
+**temp_fahrenheit = float(input("Enter temperature in Fahrenheit:-"))***
 -> Displays a message asking the user to enter a temperature in Fahrenheit.
 -> Reads the input as a string, then converts it to a floating-point number using float().
 
