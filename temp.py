@@ -1,6 +1,8 @@
- temp_fahrenheit = float(input("Enter temperature in Fahrenheit:-"))
-def in_celsius(F):
-    C=(5/9)*(F - 32)
-    TEMP = C
-    return TEMP
-print("Temperature in Celsius:",in_celsius(temp_fahrenheit))
+temp_fahrenheit = float(input("Enter temperature in Fahrenheit:-"))
+def fahrenheit_to_celsius(temp_fahrenheit: float) -> float:
+    return (temp_fahrenheit - 32) * 5.0 / 9.0
+
+if __name__ == "__main__":
+    temp_fahrenheit = float(input("Enter temperature in Fahrenheit: "))
+    temp_celsius = fahrenheit_to_celsius(temp_fahrenheit)
+    print(f"Temperature in Celsius: {temp_celsius}")
