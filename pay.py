@@ -1,12 +1,17 @@
 import math
-hours = float(input("hours of work : "))
-def unfair_weekly_paycheck_amount(hours_work):
-    unfair_hours = 0
-    unfair_hours = math.floor(hours_work)
-    unfair_pay = unfair_hours * 15
-    return f"If you work {hours_work} hours, you are paid ${unfair_pay}"
-def fair_weekly_paycheck_amount(hours_work):
-    fair_pay = hours_work * 15
-    return f"If you work {hours_work} hours, you are paid $ {fair_pay}"
-print(unfair_weekly_paycheck_amount(hours))
-print(fair_weekly_paycheck_amount(hours))
+
+def unfair_weekly_paycheck_amount(hours_worked: float) -> int:
+    return math.floor(hours_worked) * 15
+
+def fair_weekly_paycheck_amount(hours_worked: float) -> float:
+    return hours_worked * 15.0
+
+print("Unfair Pay:")
+print(unfair_weekly_paycheck_amount(2))       
+print(unfair_weekly_paycheck_amount(2.5))     
+print(unfair_weekly_paycheck_amount(100.75))  
+
+print("\nFair Pay:")
+print(fair_weekly_paycheck_amount(2))         
+print(fair_weekly_paycheck_amount(2.5))       
+print(fair_weekly_paycheck_amount(100.75))   
