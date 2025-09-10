@@ -1,4 +1,6 @@
 def calculate(score):
+    if score < 0 or score > 100:
+        return "N/A"
     if score >= 90:
         return "A"
     elif score >= 80:
@@ -9,4 +11,3 @@ def calculate(score):
         return "D"
     else:
         return "F"
-
