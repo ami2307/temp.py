@@ -1,20 +1,15 @@
-def calculate(score: float) -> str:
-    """Return letter grade for a numeric score between 0 and 100."""
-    if 0 <= score <= 100:
-        if score < 60:
-            return "F"
-        elif score < 70:
-            return "D"
-        elif score < 80:
-            return "C"
-        elif score < 90:
-            return "B"
-        else:
-            return "A"
+def get_grade(score):
+    if score >= 90:
+        return "A"
+    elif score >= 80:
+        return "B"
+    elif score >= 70:
+        return "C"
+    elif score >= 60:
+        return "D"
     else:
-        return "N/A"
+        return "F"
 
-print(calculate(97.4))   
-print(calculate(85))     
-print(calculate(-1))    
-print(calculate(120))    
+if __name__ == "__main__":
+    score = 85  # Replace with test input or input()
+    print(get_grade(score))
