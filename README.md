@@ -1,29 +1,14 @@
-# Assignment 1
+Ami Raj ami.raj2307@gmail.com
 
-1) "Converting temperature in Fahrenheit from Celsius"
+1) print vs. return
+The print statement displays output to the console, while return sends a value back from a function for further use.
+Example:
+def my_function():
+    print("Ami")    # Shows "Ami" in the console
+    return "Ami"    # Returns "Ami" to where function was called
 
-temp_fahrenheit = float(input("Enter temperature in Fahrenheit:-"))
--> Displays a message asking the user to enter a temperature in Fahrenheit.
--> Reads the input as a string, then converts it to a floating-point number using float().
--> in_celsius(F) is a function that takes a Fahrenheit value F as its parameter.
+3) bugs and issues
+When I ran my Python program, it crashed if I entered a non-numeric value instead of a number. This was because the input was not being validated correctly.
 
--> Inside the function, it uses the formula for Fahrenheit to Celsius conversion:
-C = 5/9 (F − 32)
--> The result C (Celsius temperature) is stored in the variable TEMP and returned.
-
-print("Temperature in Celsius:", in_celsius(temp_fahrenheit))
--> This prints the Celsius temperature by calling the conversion function with the user's input.
--> The function calculates and returns the Celsius value, which gets printed.
-
-2) "Computing wages in two ways"
-
--> The code starts by importing the math module for advanced math functions.
--> It then collects user input for hours worked: hours = float(input("hours of work :"))
-     This line prompts for a number, accepts input as a string, and converts it to a float for calculations.
-
-  Unfair Weekly Paycheck
-  -> math.floor(hours_work) always rounds down to the nearest integer.
-  -> Pay is only calculated for these "whole" hours: unfair_pay = unfair_hours × 15
-  
-  Fair Weekly Paycheck
-  -> It multiplies the total hours (including decimals) by 15 to give the full amount earned.
+4) resolved issue
+To fix the error, I added a check to make sure the input is numeric before processing it. Now, the program gives a clear message if the input is invalid and keeps running smoothly.
