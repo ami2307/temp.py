@@ -1,21 +1,20 @@
-def calculate(score):
+def calculate(score: float) -> str:
+    """Return letter grade for a numeric score between 0 and 100."""
     if 0 <= score <= 100:
-        if score >= 90:
-            return "A"
-        elif score >= 80:
-            return "B"
-        elif score >= 70:
-            return "C"
-        elif score >= 60:
-            return "D"
-        else:
+        if score < 60:
             return "F"
+        elif score < 70:
+            return "D"
+        elif score < 80:
+            return "C"
+        elif score < 90:
+            return "B"
+        else:
+            return "A"
     else:
         return "N/A"
 
-grade_input = input("Enter the score: ")
-try:
-    grade = float(grade_input)
-    print("Grade:", calculate(grade))
-except ValueError:
-    print("Invalid input! Please enter a number between 0 and 100.")
+print(calculate(97.4))   
+print(calculate(85))     
+print(calculate(-1))    
+print(calculate(120))    
