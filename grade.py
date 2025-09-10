@@ -1,4 +1,4 @@
-def get_grade(score):
+def calculate(score):
     if score >= 90:
         return "A"
     elif score >= 80:
@@ -9,8 +9,4 @@ def get_grade(score):
         return "D"
     else:
         return "F"
-
-if __name__ == "__main__":
-    score = 85 
-    print(get_grade(score))
 
