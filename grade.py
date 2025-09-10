@@ -11,5 +11,6 @@ def get_grade(score):
         return "F"
 
 if __name__ == "__main__":
-    score = 85  # Replace with test input or input()
+    score = 85 
     print(get_grade(score))
+
