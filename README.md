@@ -1,4 +1,4 @@
-Ami Raj ami.raj2307@gmail.com
+Ami Raj araj2@stevens.edu
 
 1) print vs. return
 The print statement displays output to the console, while return sends a value back from a function for further use.
